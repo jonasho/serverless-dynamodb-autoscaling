@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "main": "dist/plugin.js",
   "scripts": {
+    "postinstall": "tsc",
     "test": "jest",
     "test:cover": "jest --coverage",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
