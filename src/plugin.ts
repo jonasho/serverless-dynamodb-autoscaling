@@ -20,7 +20,7 @@ class Plugin {
    */
   constructor (private serverless: Serverless) {
     this.hooks = {
-      'after:package:createDeploymentArtifacts': this.beforeDeployResources.bind(this)
+      'before:package:createDeploymentArtifacts': this.beforeDeployResources.bind(this)
     }
   }
 
